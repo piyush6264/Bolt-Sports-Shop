@@ -1,70 +1,17 @@
-# Bolt-Sports-Shop
+ecommerce
+=========
 
-**Project Overview**
+**Note: This project is no longer being maintained.**
 
-Bolt Sports Shop is an eCommerce website developed to facilitate online shopping for sports products. It features a user-friendly interface and provides functionalities such as user authentication, product browsing, a shopping cart, and order management.
+A PHP e-commerce web application.
 
-**Technologies Used**
+1. To set this web application, make sure PHP and PHPMyAdmin is installed on your server.
+2. Next open PHPMyAdmin, create a database and import the bolt.sql file. This will generate tables in your database on your server.
+3. Upload all files on your server except for bolt.sql or bolt-new-phpmyadmin.sql! I have provided two database files for an old and new version of PHPMyAdmin respectively.
+4. The admin user which I have made has an email id sjobs@apple.com / admin@admin.com and the password is steve. (Please confirm this in db or create one manually.
+5. Open config.php file and add the details of your PHPMyAdmin's id and password to access the database. Now re-upload this file to the server.
+6. Once this is done, go to the url of your website and it should be up and running.
 
-Front-End: HTML, CSS, Bootstrap, JavaScript
-Back-End: PHP
-Database: MySQL
+Enjoy!
 
-**Features**
-
-User Registration and Login: Allows users to create an account and log in to access personalized features.
-Product Catalog: Display a list of sports products with options to filter and search.
-Shopping Cart: Users can add items to their cart, view the cart, and proceed to checkout.
-Order Management: Allows users to view order history and manage ongoing orders.
-Responsive Design: Ensures usability across various devices and screen sizes.
-Installation Instructions
-Clone the repository to your local machine:
-
-git clone <repository-url>
-Navigate to the project directory:
-
-cd bolt-sports-shop
-Set up the database:
-
-Import the database.sql file in your MySQL setup.
-Configure database settings in the config.php file.
-Start the development server:
-
-For a local PHP server, you can run:
-
-php -S localhost:8000
-Open your browser and go to:
-
-http://localhost:8000
-Usage
-Home Page: Browse products, use search and filter options.
-Register/Login: Access account features like order history and profile management.
-Add to Cart: Select products and add them to the cart.
-Checkout: Review the cart and complete the purchase.
-
-**Project Structure**
-
-index.php - Main entry point of the website.
-/css/ - Contains custom CSS and Bootstrap for styling.
-/js/ - JavaScript files for interactivity and AJAX requests.
-/php/ - PHP scripts for handling server-side operations.
-/config.php - Database configuration file.
-
-**Database Structure**
-
-The MySQL database consists of the following tables:
-
-Users - Stores user details.
-Products - Contains product information.
-Orders - Records order details and status.
-Cart - Manages cart items per user session.
-Contributing
-Fork the repository.
-Create your feature branch (git checkout -b feature/AmazingFeature).
-Commit your changes (git commit -m 'Add AmazingFeature').
-Push to the branch (git push origin feature/AmazingFeature).
-Open a pull request.
-
-**License**
-
-This project is licensed under the MIT License. See LICENSE file for details
+Currently only COD (Cash on Delivery), has been implemented. Working on email delivery on purchase and payment gateway. Stay tuned for the updates.
